@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="All" />
+
+        <Button
+            android:id="@+id/btnClothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="Clothing"/>
+
+        <Button
+            android:id="@+id/btnElectronics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="Electronics"/>
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="Home" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewHoodie"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/clothes"/>
+            <TextView
+                android:id="@+id/textViewHoodie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casual Hoodie"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/textViewPriceHoodie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$29.99"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/addToCartHoodie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewFridge"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/fridge"/>
+            <TextView
+                android:id="@+id/textViewFridge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fridge"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/textViewPriceFridge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$119.99"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/addToCartFridge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewLaptop"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/laptop"/>
+            <TextView
+                android:id="@+id/textViewLaptop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laptop"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/textViewPriceLaptop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$49.99"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/addToCartLaptop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewHeadPhones"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/headphones"/>
+            <TextView
+                android:id="@+id/textViewHeadPhones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fridge"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/textViewPriceHeadPhones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$59.99"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/addToCartHeadPhones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
